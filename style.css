@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Its for total video container */
+.video {
+  width: 100%;
+}
+/* It's for vedio */
+.box-video {
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  overflow: hidden;
+}
+/* for video box container which will overflow on video */
+.box-video:hover .controls {
+  transform: translateY(0);
+}
+.controls {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+  background: rgba(82, 100, 53, 0.404);
+  transform: translateY(100%) translateY(-4px);
+  transition: all 0.2s;
+}
+/* Here everything about to style video controls */
+.progress-bar {
+  height: 4px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: grey;
+}
+.progress-bar:hover,
+.progress {
+  background-color: white;
+}
+.progress {
+  height: 4px;
+  width: 0;
+  background-color: rgb(255, 178, 13);
+}
+.sound input {
+  width: 4rem;
+}
+
+/* All about video progress bar */
+
+.buttons {
+  display: flex;
+}
+.buttons button {
+  background: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  color: white;
+  height: 36px;
+  width: auto;
+  margin-left: 12px;
+}
+
+.buttons .play_controls p {
+  display: inline;
+  margin-left: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  color: white;
+}
+.play_controls #soundbar {
+  display: inline;
+}
+.play_controls,
+.v_controls {
+  display: inline;
+}
+.buttons .v_controls {
+  margin-right: 6px;
+  margin-left: auto;
+}
+.sound {
+  display: inline;
+}
+.sound #soundbar {
+  display: none;
+}
+.sound:hover #soundbar {
+  display: inline-block;
+}
